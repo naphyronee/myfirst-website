@@ -11,12 +11,14 @@
 }
 
 nav {
-  height: 80px;
-  background: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
+    position: relative;
+    height: 80px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    z-index: 2;
 }
 
 .logo {
@@ -51,6 +53,7 @@ nav a {
   align-items: center;
   color: white;
   padding: 0rem 2rem;
+  z-index: 2;
 }
 
 .column-left h1 {
@@ -98,5 +101,10 @@ button:active {
 .hero-image {
   width: 160%;
   height: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
